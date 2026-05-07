@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Button from '@/components/ui/Button'
+import Hero from '@/components/Hero'
 
 describe('SectionLabel', () => {
   it('renders its children', () => {
@@ -26,5 +27,23 @@ describe('Button', () => {
     render(<Button href="#" variant="outline">LinkedIn →</Button>)
     const link = screen.getByRole('link', { name: 'LinkedIn →' })
     expect(link).toHaveClass('border-accent')
+  })
+})
+
+describe('Hero', () => {
+  it('renders the main headline', () => {
+    render(<Hero />)
+    expect(screen.getByText(/Product\. Growth\./)).toBeInTheDocument()
+    expect(screen.getByText('Analytics.')).toBeInTheDocument()
+  })
+
+  it('renders the View Projects CTA', () => {
+    render(<Hero />)
+    expect(screen.getByRole('link', { name: 'View Projects' })).toHaveAttribute('href', '#projects')
+  })
+
+  it('renders the Download Resume CTA', () => {
+    render(<Hero />)
+    expect(screen.getByRole('link', { name: 'Download Resume' })).toHaveAttribute('href', '/resume.pdf')
   })
 })
