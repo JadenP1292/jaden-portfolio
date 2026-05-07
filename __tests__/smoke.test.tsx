@@ -95,3 +95,13 @@ describe('Experience', () => {
     expect(screen.getByText(experiences[0].bullets[0])).toBeInTheDocument()
   })
 })
+
+import ResumeBand from '@/components/ResumeBand'
+
+describe('ResumeBand', () => {
+  it('renders the resume download CTA linking to /resume.pdf', () => {
+    render(<ResumeBand />)
+    const link = screen.getByRole('link', { name: 'Download Resume (PDF)' })
+    expect(link).toHaveAttribute('href', '/resume.pdf')
+  })
+})
