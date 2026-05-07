@@ -58,8 +58,8 @@ describe('About', () => {
 
   it('renders the four stat cards', () => {
     render(<About />)
-    expect(screen.getByText('5+')).toBeInTheDocument()
-    expect(screen.getByText('2025')).toBeInTheDocument()
+    expect(screen.getByText('473K+')).toBeInTheDocument()
+    expect(screen.getByText('2026')).toBeInTheDocument()
     expect(screen.getByText('LMU Graduation')).toBeInTheDocument()
   })
 })

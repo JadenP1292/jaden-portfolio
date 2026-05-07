@@ -1,10 +1,10 @@
 import SectionLabel from '@/components/ui/SectionLabel'
 
 const stats = [
-  { num: '5+',            label: 'Projects Shipped' },
-  { num: '3',             label: 'Internships & Roles' },
-  { num: 'SQL\nPython',   label: 'Core Tech Skills' },
-  { num: '2025',          label: 'LMU Graduation' },
+  { num: '473K+',  label: 'Followers Grown' },
+  { num: '271M+',  label: 'Total Content Views' },
+  { num: '85%',    label: 'Modeling Time Reduced' },
+  { num: '2026',   label: 'LMU Graduation' },
 ]
 
 export default function About() {
