@@ -105,3 +105,22 @@ describe('ResumeBand', () => {
     expect(link).toHaveAttribute('href', '/resume.pdf')
   })
 })
+
+import Contact from '@/components/Contact'
+
+describe('Contact', () => {
+  it('renders all three contact links', () => {
+    render(<Contact />)
+    expect(screen.getByRole('link', { name: /LinkedIn/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /GitHub/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Email/i })).toHaveAttribute('href', 'mailto:jadenp1292@gmail.com')
+  })
+
+  it('renders the mailto send button', () => {
+    render(<Contact />)
+    expect(screen.getByRole('link', { name: 'Send an Email' })).toHaveAttribute(
+      'href',
+      'mailto:jadenp1292@gmail.com?subject=Hello%20Jaden'
+    )
+  })
+})
