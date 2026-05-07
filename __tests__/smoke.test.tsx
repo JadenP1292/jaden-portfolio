@@ -78,3 +78,20 @@ describe('Skills', () => {
     expect(screen.getByText('React Native')).toBeInTheDocument()
   })
 })
+
+import Experience from '@/components/Experience'
+import { experiences } from '@/data/experience'
+
+describe('Experience', () => {
+  it('renders a card for every experience entry', () => {
+    render(<Experience />)
+    experiences.forEach(exp => {
+      expect(screen.getByText(exp.title)).toBeInTheDocument()
+    })
+  })
+
+  it('renders bullet points for the first experience', () => {
+    render(<Experience />)
+    expect(screen.getByText(experiences[0].bullets[0])).toBeInTheDocument()
+  })
+})
