@@ -113,7 +113,7 @@ describe('Contact', () => {
     render(<Contact />)
     expect(screen.getByRole('link', { name: /LinkedIn/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /GitHub/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Email/i })).toHaveAttribute('href', 'mailto:jadenp1292@gmail.com')
+    expect(screen.getByRole('link', { name: /jadenp1292@gmail\.com/ })).toHaveAttribute('href', 'mailto:jadenp1292@gmail.com')
   })
 
   it('renders the mailto send button', () => {
