@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import SectionLabel from '@/components/ui/SectionLabel'
 import Button from '@/components/ui/Button'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
 
 describe('SectionLabel', () => {
   it('renders its children', () => {
@@ -45,5 +46,19 @@ describe('Hero', () => {
   it('renders the Download Resume CTA', () => {
     render(<Hero />)
     expect(screen.getByRole('link', { name: 'Download Resume' })).toHaveAttribute('href', '/resume.pdf')
+  })
+})
+
+describe('About', () => {
+  it('renders the section heading', () => {
+    render(<About />)
+    expect(screen.getByText(/Strategy \+ data/)).toBeInTheDocument()
+  })
+
+  it('renders the four stat cards', () => {
+    render(<About />)
+    expect(screen.getByText('5+')).toBeInTheDocument()
+    expect(screen.getByText('2025')).toBeInTheDocument()
+    expect(screen.getByText('LMU Graduation')).toBeInTheDocument()
   })
 })
