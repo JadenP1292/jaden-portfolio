@@ -124,3 +124,13 @@ describe('Contact', () => {
     )
   })
 })
+
+import Footer from '@/components/Footer'
+
+describe('Footer', () => {
+  it('renders the author name and year', () => {
+    render(<Footer />)
+    expect(screen.getByText(/Jaden Path/)).toBeInTheDocument()
+    expect(screen.getByText(/2025/)).toBeInTheDocument()
+  })
+})
