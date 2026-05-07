@@ -3,6 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import Button from '@/components/ui/Button'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Skills from '@/components/Skills'
 
 describe('SectionLabel', () => {
   it('renders its children', () => {
@@ -60,5 +61,20 @@ describe('About', () => {
     expect(screen.getByText('5+')).toBeInTheDocument()
     expect(screen.getByText('2025')).toBeInTheDocument()
     expect(screen.getByText('LMU Graduation')).toBeInTheDocument()
+  })
+})
+
+describe('Skills', () => {
+  it('renders all three skill group headings', () => {
+    render(<Skills />)
+    expect(screen.getByText('Data & Analytics')).toBeInTheDocument()
+    expect(screen.getByText('Product & Growth')).toBeInTheDocument()
+    expect(screen.getByText('Tech & Tools')).toBeInTheDocument()
+  })
+
+  it('renders specific skill pills', () => {
+    render(<Skills />)
+    expect(screen.getByText('SQL')).toBeInTheDocument()
+    expect(screen.getByText('React Native')).toBeInTheDocument()
   })
 })
