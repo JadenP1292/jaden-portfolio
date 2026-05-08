@@ -6,7 +6,7 @@ const contactLinks = [
     emoji: '💼',
     label: 'LinkedIn',
     sub: 'linkedin.com/in/jaden-path',
-    href: 'https://linkedin.com/in/jaden-path',
+    href: 'https://www.linkedin.com/in/jaden-path/',
   },
   {
     emoji: '⌨️',

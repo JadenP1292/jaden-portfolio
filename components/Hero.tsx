@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="flex gap-3 justify-center flex-wrap mb-12">
           <Button href="#projects" variant="primary">View Projects</Button>
           <Button href="/resume.pdf" variant="dark">Download Resume</Button>
-          <Button href="https://linkedin.com/in/jadenpath" variant="outline">LinkedIn →</Button>
+          <Button href="https://www.linkedin.com/in/jaden-path/" variant="outline">LinkedIn →</Button>
         </div>
 
         {/* Badges */}
