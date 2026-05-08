@@ -8,7 +8,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     emoji: '🏢',
-    title: 'Real Estate Analytics Intern — Pacific Horizon LLC',
+    title: 'Real Estate Analytics Intern at Pacific Horizon LLC',
     meta: 'May 2025–Present · Los Angeles, CA',
     bullets: [
       'Built and deployed an internal web app used firm-wide to automate financial modeling across a ~$40M, 20-property portfolio, reducing modeling time up to 85%',
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
   },
   {
     emoji: '🚀',
-    title: 'Founder & Operator — Digital Media Brand',
+    title: 'Founder & Operator, Digital Media Brand',
     meta: 'Aug 2025–Present · Los Angeles, CA',
     bullets: [
       'Founded and operate a multi-platform digital media brand, building scalable content systems and growth strategies across TikTok, YouTube, and Instagram',
@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
   },
   {
     emoji: '📊',
-    title: 'Business Analyst & Operations Intern — Rose City Works',
+    title: 'Business Analyst & Operations Intern at Rose City Works',
     meta: 'May 2024–Aug 2024 · Los Angeles, CA',
     bullets: [
       'Informed $2M+ in sales decisions through historical trend analysis across Shopify storefronts for artist and music industry clients',
@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
   },
   {
     emoji: '📣',
-    title: 'Marketing & PR Manager — The Emily Shane Foundation',
+    title: 'Marketing & PR Manager at The Emily Shane Foundation',
     meta: 'Sep 2023–May 2025 · Los Angeles, CA',
     bullets: [
       'Drove a 17% increase in audience reach through email campaigns targeting hundreds of subscribers, earning the foundation a 2024 California Nonprofit of the Year award',

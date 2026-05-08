@@ -22,7 +22,7 @@ export const projects: Project[] = [
     type: 'Web App + Analytics',
     title: 'Real Estate Financial Modeling Tool',
     description:
-      'Built and deployed an internal web app used firm-wide at Pacific Horizon LLC to automate financial modeling across a ~$40M, 20-property portfolio — reducing modeling time up to 85%.',
+      'Built and deployed an internal web app used firm-wide at Pacific Horizon LLC to automate financial modeling across a ~$40M, 20-property portfolio, cutting modeling time by up to 85%.',
     tools: ['Python', 'FastAPI', 'Excel', 'Financial Modeling'],
     imageAlt: 'Real Estate Analytics Dashboard',
   },
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: 'digital-media-brand',
     type: 'Growth',
-    title: 'Digital Media Brand — 473K Followers',
+    title: 'Digital Media Brand: 473K Followers',
     description:
       'Founded and operate a multi-platform brand scaled from 0 to 473,000+ followers and 271M+ cumulative views in 8 months. Secured paid deals with Motown Records, Atlantic Records, 88Rising, and CUBE Entertainment.',
     tools: ['Content Strategy', 'Social Analytics', 'Growth Analytics', 'P&L'],

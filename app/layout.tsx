@@ -5,10 +5,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Jaden Path — Product, Growth & Analytics',
+  title: 'Jaden Path | Product, Growth & Analytics',
   description: 'Portfolio of Jaden Path, LMU senior specializing in product marketing, growth analytics, and AI workflows.',
   openGraph: {
-    title: 'Jaden Path — Product, Growth & Analytics',
+    title: 'Jaden Path | Product, Growth & Analytics',
     description: 'Portfolio of Jaden Path, LMU senior specializing in product marketing, growth analytics, and AI workflows.',
     type: 'website',
   },
