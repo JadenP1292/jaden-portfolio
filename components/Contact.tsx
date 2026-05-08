@@ -42,6 +42,8 @@ export default function Contact() {
               <a
                 key={link.label}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-white border border-warm-border rounded-xl px-5 py-4 no-underline text-dark hover:shadow-sm transition-shadow"
               >
                 <div className="w-9 h-9 bg-cream-muted rounded-lg flex-shrink-0 flex items-center justify-center text-base">

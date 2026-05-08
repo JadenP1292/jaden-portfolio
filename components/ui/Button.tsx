@@ -12,9 +12,11 @@ const variantClasses: Record<Props['variant'], string> = {
 }
 
 export default function Button({ href, variant, children, className = '' }: Props) {
+  const external = href.startsWith('http')
   return (
     <a
       href={href}
+      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       className={`text-[14px] font-semibold px-6 py-3 rounded-[7px] inline-block ${variantClasses[variant]} ${className}`}
     >
       {children}
