@@ -14,6 +14,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: 'Tech & Tools',
-    skills: ['React Native', 'TypeScript', 'Supabase', 'FastAPI', 'Claude Code', 'AI Workflows', 'Notion / Airtable'],
+    skills: ['React Native', 'TypeScript', 'Supabase', 'FastAPI', 'Git / GitHub', 'AI Workflows', 'Notion / Airtable'],
   },
 ]
