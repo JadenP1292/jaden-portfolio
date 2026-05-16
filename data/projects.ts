@@ -15,6 +15,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'canon-intelligence-pipeline',
+    type: 'Data Engineering / AI',
+    title: 'Canon Competitive Intelligence Pipeline',
+    description:
+      'Built an end-to-end ELT pipeline ingesting stock price and news data for 5 imaging competitors via Alpha Vantage API and web scraping, loading into Snowflake with dbt-layered staging and mart models. Orchestrated fully automated daily runs via GitHub Actions and deployed a Streamlit dashboard surfacing pricing and revenue trend analysis. Engineered a RAG-powered chatbot enabling natural language queries against Canon IR and news documents.',
+    tools: ['Python', 'Snowflake', 'dbt', 'GitHub Actions', 'Streamlit', 'RAG', 'Alpha Vantage API'],
+    imageAlt: 'Canon Competitive Intelligence Dashboard',
+  },
+  {
     id: 'creator-matchmaking',
     type: 'Mobile App',
     title: 'Creator Matchmaking App',
