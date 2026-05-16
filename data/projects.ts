@@ -1,3 +1,8 @@
+export interface ProjectLink {
+  label: string
+  href: string
+}
+
 export interface Project {
   id: string
   type: string
@@ -5,6 +10,7 @@ export interface Project {
   description: string
   tools: string[]
   imageAlt: string
+  links?: ProjectLink[]
 }
 
 export const projects: Project[] = [
@@ -43,6 +49,11 @@ export const projects: Project[] = [
       'Founded and operate a multi-platform brand scaled from 0 to 473,000+ followers and 271M+ cumulative views in 8 months. Secured paid deals with Motown Records, Atlantic Records, 88Rising, and CUBE Entertainment.',
     tools: ['Content Strategy', 'Social Analytics', 'Growth Analytics', 'P&L'],
     imageAlt: 'Digital Media Brand Growth',
+    links: [
+      { label: 'TikTok',     href: 'https://www.tiktok.com/@jadenisbored' },
+      { label: 'YouTube',    href: 'https://www.youtube.com/@JadenIsBored' },
+      { label: 'Instagram',  href: 'https://www.instagram.com/jadenisboredmusic' },
+    ],
   },
   {
     id: 'sql-sales-analysis',

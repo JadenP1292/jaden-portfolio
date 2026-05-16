@@ -43,9 +43,21 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <a href="#" className="text-xs font-semibold text-accent">
-                  View Case Study →
-                </a>
+                {project.links && (
+                  <div className="flex flex-wrap gap-3">
+                    {project.links.map(link => (
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-semibold text-accent"
+                      >
+                        {link.label} →
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
