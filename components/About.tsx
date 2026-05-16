@@ -4,7 +4,7 @@ const stats = [
   { num: '473K+',  label: 'Followers Grown' },
   { num: '271M+',  label: 'Total Content Views' },
   { num: '85%',    label: 'Modeling Time Reduced' },
-  { num: '2026',   label: 'LMU Graduation' },
+  { num: "'26",    label: 'LMU Graduate' },
 ]
 
 export default function About() {
@@ -19,9 +19,10 @@ export default function About() {
               Strategy + data,<br />built for impact.
             </h2>
             <p className="text-[15px] text-stone-600 leading-[1.75] mb-4">
-              I'm a senior at Loyola Marymount University studying Information Systems and
-              Business Analytics with a minor in Computer Science. I care about building things
-              that are useful: products, systems, and strategies that drive real outcomes.
+              I recently graduated from Loyola Marymount University with a degree in Information
+              Systems and Business Analytics and a minor in Computer Science. I care about
+              building things that are useful: products, systems, and strategies that drive real
+              outcomes.
             </p>
             <p className="text-[15px] text-stone-600 leading-[1.75] mb-4">
               My work spans analytics, product operations, growth, and early-stage tech. I'm

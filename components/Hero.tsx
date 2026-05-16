@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="max-w-[900px] mx-auto">
         {/* Tag pill */}
         <div className="inline-block bg-cream-muted text-accent-dark text-[11px] font-bold tracking-[2.5px] uppercase px-4 py-1.5 rounded-full mb-6">
-          LMU · Information Systems & Business Analytics
+          LMU '26 · Information Systems & Business Analytics
         </div>
 
         {/* Headline */}

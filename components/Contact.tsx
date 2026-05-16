@@ -32,7 +32,7 @@ export default function Contact() {
         </h2>
         <p className="text-base text-stone-500 leading-[1.6] mb-12">
           Open to full-time roles in product marketing, growth, analytics, operations,
-          and AI-adjacent work starting 2026.
+          and AI-adjacent work. Available now.
         </p>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
