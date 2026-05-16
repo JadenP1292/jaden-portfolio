@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     id: 'canon-intelligence-pipeline',
     type: 'Data Engineering / AI',
-    title: 'Canon Competitive Intelligence Pipeline',
+    title: 'Imaging Industry Competitive Intelligence Pipeline',
     description:
       'Built an end-to-end ELT pipeline ingesting stock price and news data for 5 imaging competitors via Alpha Vantage API and web scraping, loading into Snowflake with dbt-layered staging and mart models. Orchestrated fully automated daily runs via GitHub Actions and deployed a Streamlit dashboard surfacing pricing and revenue trend analysis. Engineered a RAG-powered chatbot enabling natural language queries against Canon IR and news documents.',
     tools: ['Python', 'Snowflake', 'dbt', 'GitHub Actions', 'Streamlit', 'RAG', 'Alpha Vantage API'],
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: 'AI Student Insights Dashboards',
     description:
       'Led development of AI-powered student insights dashboards at AcePrep tracking 7+ performance metrics. Improved AI quiz relevance by testing 50+ prompt variations and integrated frontend dashboards with backend analytics APIs.',
-    tools: ['Product Analytics', 'Prompt Engineering', 'AI Tools', 'API Integration'],
+    tools: ['React', 'Prompt Engineering', 'API Integration', 'Product Analytics'],
     imageAlt: 'AcePrep AI Dashboards',
   },
   {
